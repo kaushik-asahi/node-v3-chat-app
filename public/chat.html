@@ -35,7 +35,9 @@
     <script id="location-message-template" type="text/html">
       <div class="message">
         <p>
-          <span class="message__name"> Some user name{{userName}} </span>
+          <span class="message__name">
+            {{userName}}{{^userName}}Admin{{/userName}}
+          </span>
           <span class="message__meta"> {{createdAt}} </span>
         </p>
         <p>
